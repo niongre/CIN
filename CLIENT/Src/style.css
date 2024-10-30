@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primaryColor: #3498db;
+    --secondaryColor: #2ecc71;
+    --accentColor: #e74c3c;
+    --backgroundColor: #ecf0f1;
+    --textColor: #2c3e50;
+    --footColor: hwb(147 10% 35%);
+    --fontSize: 18px;
+}
+
+body{
+    height: 100%;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);    
+}
+
+.container{
+    padding: 0;
+}
+
+
+#header-placeholder{
+    background-color: var(--primaryColor);
+    width: 100%;
+    margin: 0;
+}
+
+#footer{
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 0;
+    position:sticky;
+}
+#footer p{
+    margin: 5px 0;
+}
+
+/* Home */
+.home-block1{
+    display: flexbox;
+}
+/*About */
+#about-img{
+    display: flex;
+    max-width: 100%;
+    color: blue;
+}
+
+#about-box{
+    width: 100%;
+    display: flex;
+    margin: 4px;
+}
+
+.about-box{
+    max-width: 50%;
+}
+
+.about-box fieldset{
+    padding: 1rem 0.3rem;
+    border-color: brown;
+    border-radius: 10px;
+    box-shadow: 3px 4px blueviolet;
+}
+
+.about-box fieldset legend{
+    padding: 3px;
+    text-align:center;
+    border: 6px;
+    border-style:double;
+    border-color: brown;
+    border-radius: 5px;
+    box-shadow: 3px 4px blueviolet;
+    text-transform: uppercase;
+}
+
+.about-box fieldset p{
+    text-indent: 1rem;
+}
+
+.member-box{
+    margin: 0.5rem 0;
+    text-align: center;
+    border-style: groove;
+    border-radius: 1rem;
+    box-shadow: 3px 5px;
+}
+
+#about-box .about-rules{
+    border-style: groove;
+    border-radius: 1.5rem;
+    padding: 1.3rem 1rem;
+    box-shadow: 3px 5px;
+}
+
+/* Events */
+.events-page{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.events-page .left{
+    width: 40px;
+}
+
+.events-page .right{
+    width: 55%;
+    padding: 20px;
+    background-color: var(--backgroundColor);
+    border-left: 1px solid var(--primaryColor);
+}
+.events-calendar{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.events-calendar th, .events-calendar td{
+    padding: 12px;
+    border: 1px solid var(--primaryColor);
+}
+
+.events-calendar th{
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.events-calendar tr:nth-child(even){
+    background-color: var(--backgroundColor);
+}
+
+.events-calendar tr:hover{
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
+.events-calendar a{
+    color: var(--accentColor);
+    text-decoration: none;
+}
+
+/* Blog*/
+.blog-post img{
+    margin-bottom: 15px;
+}
+
+.date{
+    font-style: italic;
+    color: gray;
+}
+
+.list-group-item h{
+    margin-bottom: 5px;
+}
+
+.list-group-item p{
+    margin-bottom: 10px;
+}
