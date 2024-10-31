@@ -47,9 +47,41 @@ body{
 }
 
 /* Home */
-.home-block1{
-    display: flexbox;
+.home-block1 .image-container{
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
+.home-block1 .text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3px;
+    background-color: rgba(0, 0, 0, 0.1); /* semi-transparent background */
+    padding: 20px 30px;
+    margin: 4px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.home-block1 .text-overlay .scrolling-text {
+    display: inline-block;
+    font-size: 32px;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /*About */
 #about-img{
     display: flex;

@@ -17,13 +17,13 @@
 
   <main class="container">
 
-        <div class="row home-block1" style="max-height: 350px;">
-            <div class="col-lg-12 cols1">
-              <img src="/CLIENT/Assets/img/techn.jpg" alt="img techn" class="img-fluid">
-              <div style="position: absolute;">
+        <div class="row home-block1">
+            <div class="image-container">
+                <img src="/CLIENT/Assets/img/techn.jpg" alt="img techn" class="img-fluid img-responsive" style="opacity: 0.8;">
+              <div class="text-overlay">
                 <h1>Club les Intéllos du Numérique</h1>
                 <br>
-                <p>Informatique, le chemin du monde nouveau.</p>
+                <p class="scrolling-text">Informatique, le chemin du monde nouveau.</p>
               </div>
             </div>
         </div>
@@ -34,10 +34,10 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner" style="max-height: 400px;">
+          <div class="carousel-inner d-flex" style="max-height: 400px;">
             <div class="carousel-item active">
               <img src="/CLIENT/Assets/img/code.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block d-md-block" data-bs-interval="10000">
                 <h5>Formations</h5>
                 <p>Découvrez nos offres de formations.</p>
                 <button class="btn">Consultez</button>
@@ -45,14 +45,14 @@
             </div>
             <div class="carousel-item">
               <img src="/CLIENT/Assets/img/computer-room.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="/CLIENT/Assets/img/virus.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
               </div>
