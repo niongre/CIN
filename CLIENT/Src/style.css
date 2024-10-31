@@ -32,6 +32,17 @@ body{
     background-color: var(--primaryColor);
     width: 100%;
     margin: 0;
+    text-align: center;
+
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+    z-index: 1000; /* Pour s'assurer que la nav reste au-dessus des autres éléments */
+    background-color: white; /* Optionnel : ajoute un fond à la navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionnel : ajoute une ombre pour plus de style */
 }
 
 #footer{
@@ -57,10 +68,10 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
+    font-size: 36px;
     transform: translate(-50%, -50%);
-    font-size: 3px;
     background-color: rgba(0, 0, 0, 0.1); /* semi-transparent background */
-    padding: 20px 30px;
+    padding: 10px 20px;
     margin: 4px 0;
     border-radius: 10px;
     overflow: hidden;
@@ -68,7 +79,7 @@ body{
 
 .home-block1 .text-overlay .scrolling-text {
     display: inline-block;
-    font-size: 32px;
+    font-size: 30px;
     white-space: nowrap;
     animation: scroll-left 10s linear infinite;
 }
@@ -198,4 +209,30 @@ body{
 
 .list-group-item p{
     margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* Media Queries pour écrans de 768px ou moins */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Réduire la largeur du conteneur */
+    }
+
+    header, footer {
+        padding: 20px 0; /* Augmenter le padding */
+    }
+
+    .home-block1 .image-container .text-overlay{
+
+        font-size: 24px;
+        padding: 15px 20px;
+    }
+    .home-block1 .image-container .scrolling-text {
+        font-size: 20px;
+    }
 }

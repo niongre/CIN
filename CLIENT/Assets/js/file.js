@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function(){
     fetch("/CLIENT/Src/Public/Components/header.html")
         .then(response => response.text())
         .then(data => {
