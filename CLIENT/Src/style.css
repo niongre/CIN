@@ -184,6 +184,10 @@ body{
 }
 
 /* Events */
+#training{
+    background: url("/CLIENT/Assets/img/network.png");
+    
+}
 
 .training-items{
     padding-top: 4px;
@@ -211,20 +215,34 @@ body{
 }
 
 /* Blog*/
-.blog-post img{
-    margin-bottom: 15px;
+#blog{
+    background: url("/CLIENT/Assets/img/www.jpg");
+    background-size: cover;
+    opacity: 0.9;
 }
 
-.date{
+.blog-post{
+    border-style: solid;
+    background-color: #d1d8ce;
+}
+
+.blog-post img{
+    margin: 15px;
+    border-radius: 3px;
+    width: 80%;
+
+}
+
+.blog-post .date{
     font-style: italic;
     color: gray;
 }
 
-.list-group-item h{
+.blog-post .list-group-item h{
     margin-bottom: 5px;
 }
 
-.list-group-item p{
+.blog-post .list-group-item p{
     margin-bottom: 10px;
 }
 
